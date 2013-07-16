@@ -1,0 +1,170 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+/* card styles */
+
+body {
+    margin: 60px 2em;
+    height: 100%;
+}
+
+/* fix problem with Angular UI bootstrap cursor on anchors */
+a {
+    cursor: pointer;
+}
+
+.card_holder {
+    overflow: auto;
+}
+.card {
+    background-color: white;
+    padding: 0;
+    margin: .25em;
+    min-width: 240px;
+
+    border-radius: 6px;
+    box-shadow: 3px 3px 3px #ddd;
+    border: solid 1px #ccc;
+
+    float: left;
+    height: 250px;
+    /*overflow: visible;*/
+}
+
+.card_header {
+    background-color: #eee;
+    background-image: linear-gradient(to bottom,#fff,#f2f2f2);
+    border-bottom: solid 1px #ccc;
+    padding: .25em .25em 0 .25em;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.card_body {
+    padding: .25em .5em .25em .5em;
+    margin: 0;
+}
+
+.card h3 {
+    padding: 0 .25em 0 0;
+    margin: 0 0 0 0;
+}
+
+.card ul.contact {
+    padding: 0 0 0 0;
+    margin: 0 0 .5em 0;
+
+    list-style: none;
+}
+
+.card h4 {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    font-style: italic;
+}
+
+.card ul.notifications {
+    padding-top: 0;
+    padding-left: 1.25em;
+    padding-bottom: 1em;
+    margin: 0 0 0 0;
+}
+
+.card ul.details{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contList{
+    padding-top: 0;
+    padding-left: 1.25em;
+    padding-bottom: 1em;
+    margin: 0 0 0 0;
+}
+
+.desc{
+    padding: .25em;
+    margin: .25em;
+}
+
+.card .btn {
+    float: right;
+}
+
+.card.new {
+    color: #ccc;
+    font-style: italic;
+    cursor: hand;
+    cursor: pointer;
+}
+
+.card.new a {
+    color: #ccc;
+}
+
+.configNotificationsBtn {
+    float: right;
+}
+
+.navbar-inner.cai_header {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.red-message{
+    color: red;
+}
+
+.imagePad{
+    padding-left:.25em;
+}
+
+.collapsePanel{
+    z-index: 999;
+}
+
+/* definition selection */
+
+.scrollBox {
+	height: 110px;
+	overflow: auto;
+	border: 1px solid #ccc;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+	margin: 4px;
+	padding: 2px;
+}
+
+.modal-body {
+  max-height: 450px;
+}

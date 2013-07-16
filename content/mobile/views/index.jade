@@ -1,0 +1,11 @@
+extends layout
+
+block body
+    script(src='/shared/underscore/underscore-min.js')    
+    script(src='/mobile/js/controllers/mainController.js')
+    script(src='/mobile/js/app.js')	
+
+    h1 Mobile
+    div(ng-view)
+        
+    include partials/hello.jade

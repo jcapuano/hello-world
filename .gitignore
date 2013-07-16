@@ -1,14 +1,35 @@
-lib-cov
-*.seed
-*.log
-*.csv
-*.dat
-*.out
-*.pid
-*.gz
+#################
+## WebStorm
+#################
 
-pids
-logs
-results
+.idea/*
 
+############
+## Windows
+############
+
+# Windows image file caches
+Thumbs.db 
+
+# Folder config file
+Desktop.ini
+
+############
+## Node
+############
+
+node_modules/
 npm-debug.log
+
+############
+## Configuration
+############
+config/development.js
+config/production.js
+
+############
+## Misc
+############
+test_out/
+logs/*.log
+/test/selenium/selenium-server-standalone-2.33.0.jar
