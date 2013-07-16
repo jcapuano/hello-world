@@ -9,7 +9,7 @@ catch(e) {
     caiServices = angular.module('cai.services', []);
 };
 caiServices
-    .factory('apiProvider', function(MockBODs, MockPaths, MockTemplates, MockContacts, MockNotifications) {
+    .factory('apiProvider', function() {
     	var service = {
 			callFunction: function(name, params){
 		    	var data = null;

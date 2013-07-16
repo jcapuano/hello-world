@@ -1,14 +1,18 @@
 [
 	{
-		"name" : "Frank"
+		"name" : "Frank",
+        "country": "United Kingdom"
 	},
 	{		
-		"name" : "Mary"
+		"name" : "Mary",
+        "country": "United States"
 	},
 	{
-		"name" : "George"
+		"name" : "George",
+        "country": "United Kingdom"
 	},
 	{
-		"name" : "Josephine"
+		"name" : "Josephine",
+        "country": "Angola"
 	}
 ]

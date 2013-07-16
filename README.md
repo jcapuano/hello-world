@@ -1,7 +1,7 @@
 Hello World
 ===========
 
-### TODO
+## TODO
 
 * use citizen provider to say hello to citizens
  - extend citizen model to include country
@@ -13,3 +13,37 @@ Hello World
 
 * e2e test citizen controller
  - use same mock citizen provider
+
+## Citizen JSON
+
+```javascript
+{
+    "name": "",
+    "country": ""
+}
+```
+
+## Citizen Provider API
+
+*getCitizens*
+
+### Input
+```javascript
+{
+    "country": ""
+}
+```
+
+### Output
+```javascript
+[
+    {
+        "country": "",
+        "citizens": [
+            {
+                "name": ""
+            }
+        ]
+    }
+]
+```
