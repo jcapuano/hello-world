@@ -48,8 +48,13 @@ var get = pool.ensureConnection(citizenPool, function(db, queryObj, options) {
 module.exports = {
     services: {
         getCitizens: {
-            handler: function() {
-                return get(null, {sort: ['name','asc']});
+            handler: function(options) {
+            	var query = null;
+                if (options && options.country) {
+                	query = { country: options.country };
+                }
+            
+                return get(query, {sort: ['name','asc']});
             }
         }
     }
