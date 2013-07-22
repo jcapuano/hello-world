@@ -34,7 +34,15 @@ var get = pool.ensureConnection(citizenPool, function(db, queryObj, options) {
                 // falls through to fail handler
                 return Q.reject(new Error('Citizens for query "' + JSON.stringify(queryObj) + '" not found.'));
             }
-            return data;
+            // group citizens by country
+            return _.map(_.uniq(_.pluck(_.sortBy(data, 'country'), 'country')), function(country) {
+            	return {
+                	name: country,
+                    citizens: _.map(_.filter(data, function(citizen) { return citizen.country === country;}), function(c) {
+                    	return _.omit(c, 'country');
+					})
+            	};
+            });
         })
         .fail(function(err) {
             log.error(err);

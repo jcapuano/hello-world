@@ -9,24 +9,22 @@ catch(e) {
     caiServices = angular.module('cai.services', []);
 };
 caiServices
-    .factory('apiProvider', function() {
+    .factory('apiProvider', function(MockData) {
     	var service = {
 			callFunction: function(name, params){
-		    	var data = null;
+		    	var data = MockData.hasOwnProperty(name) 
+                	? (_.isFunction(MockData[name]) ? MockData[name](params) : MockData[name])
+                    : params;
 
 				// it's an object that looks like a promise, right??
 				return {        
-			    	then: function(callback) {
-			        	callback({result:
-                            data});
+			    	then: function(callback, errcallback) {
+			        	callback({result: data});
 			            return this;
 			        }
 				};
 		    }
 		};
         return service;
-    });
-
-
-
+    })
 })();

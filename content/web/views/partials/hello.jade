@@ -1,2 +1,12 @@
 script#hello(type='text/ng-template')
-    h2 {{message}}
+    h2#welcome {{message}}
+
+    div.country-list
+        ul(class="nav nav-tabs nav-stacked")
+            li(id="country_id", ng-repeat="country in countries | orderBy:'name'")
+                ul
+                    li(id="country_name_id", class="country-name") {{country.name}}
+                        div.citizen-list
+                            ul(class="nav nav-tabs nav-stacked")
+                                li(id="citizen_id", ng-repeat="citizen in country.citizens | orderBy:'name'")
+                                    div(id="name_id", class="citizen-name") {{citizen.name}}

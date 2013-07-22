@@ -21,6 +21,7 @@
     "express-expose": "~0.3.3"
   },
   "devDependencies": {
+    "karma": "*",
     "protractor": "*",
     "selenium-webdriver": "*",
     "mocha": "=1.10.0",

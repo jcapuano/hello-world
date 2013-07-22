@@ -30,6 +30,7 @@ config/production.js
 ############
 ## Misc
 ############
-test_out/
+test/out/
 logs/*.log
-/test/selenium/selenium-server-standalone-2.33.0.jar
+/test/selenium/*
+*.pst

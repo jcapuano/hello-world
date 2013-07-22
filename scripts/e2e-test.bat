@@ -12,7 +12,7 @@ REM - ChromeDriver (http://code.google.com/p/chromedriver/downloads/list)
 set BASE_DIR=%~dp0
 
 cls
-node "%BASE_DIR%\..\node_modules\protractor\bin\protractor" "%BASE_DIR%\..\config\protractorConf.js" %*
+node "%BASE_DIR%\..\node_modules\protractor\bin\protractor" "%BASE_DIR%\..\config\protractor.conf.js" %*
 
 @echo e2e test suite complete
 

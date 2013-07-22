@@ -12,27 +12,28 @@ files = [
   'node_modules/sinon/lib/sinon/stub.js',
   'node_modules/sinon-chai/lib/sinon-chai.js',
   'node_modules/underscore/underscore.js',
-  'content/shared/public/js/lib/angular/angular.js',
+  'content/shared/public/angular/angular.js',
   'content/shared/public/angular-ui-bootstrap/ui-bootstrap-tpls-0.2.0.js',
   //'content/shared/public/js/lib/angular/angular-*.js',
   'test/lib/angular/angular-mocks.js',
   //'content/shared/public/js/lib/*.js',
-  'content/mobile/public/js/app.js',
-  'content/mobile/public/js/services/*.js',
-  'content/mobile/public/js/filters/*.js',
-  'content/mobile/public/js/directives/*.js',
-  'content/mobile/public/js/controllers/*.js',
-  'test/mocks/*.js',
+  'content/web/public/js/app.js',
+  'content/web/public/js/services/*.js',
+  'content/web/public/js/filters/*.js',
+  'content/web/public/js/directives/*.js',
+  'content/web/public/js/controllers/*.js',
+  'test/mocks/CaiServicesMock.js',
+  'test/mocks/mockServiceData.js',
   'test/unit/client/**/*.js'
 ];
 
-autoWatch = false;
-singleRun = true;
+autoWatch = true;
+singleRun = false;
 
 browsers = ['Chrome'];
 
-reporters=['junit'];
+//reporters=['junit'];
 junitReporter = {
-  outputFile: 'test_out/unit.xml',
+  outputFile: 'test/out/unit.xml',
   suite: 'unit'
 };

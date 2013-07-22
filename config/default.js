@@ -33,6 +33,9 @@ module.exports = {
 	    }
 	  }
   },
+  logging: {
+      level: 'info'
+  },    
     db: {
         citizens: {
             host: 'localhost',
