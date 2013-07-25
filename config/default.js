@@ -1,5 +1,5 @@
 module.exports = {
-  port: 3000,
+  port: 8000,
   locales: [],
   client: {
     socket_server: 'data.socket.server.host',
