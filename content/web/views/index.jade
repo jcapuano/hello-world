@@ -3,9 +3,11 @@ extends layout
 block body
     script(src='/shared/underscore/underscore-min.js')    
     script(src='/web/js/controllers/mainController.js')
+    script(src='/web/js/controllers/profileController.js')
     script(src='/web/js/app.js')	
 
     h1 Web
     div(ng-view)
         
     include partials/hello.jade
+    include partials/profile.jade

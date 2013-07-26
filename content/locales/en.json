@@ -1,3 +1,15 @@
 {
-	"txtWelcome": "Greetings!"
+	"txtWelcome": "Greetings!",
+	"txtChangeTitle": "txtChangeTitle",
+	"msgChangeInfo": "msgChangeInfo",
+	"txtCurrentPassword": "txtCurrentPassword",
+	"txtPassword": "txtPassword",
+	"txtChangePasswordStrength": "txtChangePasswordStrength",
+	"txtConfirmPassword": "txtConfirmPassword",
+	"txtChangePasswordLength": "txtChangePasswordLength",
+	"txtChangePasswordDigit": "txtChangePasswordDigit",
+	"txtChangePasswordSpecialChar": "txtChangePasswordSpecialChar",
+	"txtChangePasswordMatch": "txtChangePasswordMatch",
+	"txtChangePassword": "txtChangePassword",
+	"txtCancel": "txtCancel"
 }

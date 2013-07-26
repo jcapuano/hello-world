@@ -11,3 +11,8 @@ script#hello(type='text/ng-template')
                             ul(class="nav nav-tabs nav-stacked")
                                 li(id="citizen_id", ng-repeat="citizen in country.citizens | orderBy:'name'")
                                     div(id="name_id", class="citizen-name") {{citizen.name}}
+
+    div
+        i
+            small
+                a(href='/profile') {{user.userName}}

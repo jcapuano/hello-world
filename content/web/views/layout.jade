@@ -13,5 +13,5 @@ html(ng-app="peApp")
     include /core/web/scripts    
     //don't want to source it this way (rather get it from server) but don't want to deal with the unknowns right now
     script(src='/shared/socket.io/socket.io.js')
-    script(type='text/javascript', src='/cai/core/web/js/services/api_services.js')
+    include /core/web/templates
     block body
