@@ -1,7 +1,8 @@
 extends layout
 
 block body
-    script(src='/shared/underscore/underscore-min.js')    
+    script(src='/shared/underscore/underscore-min.js')
+    script(src='/shared/services/mockCore.js')
     script(src='/web/js/controllers/mainController.js')
     script(src='/web/js/controllers/profileController.js')
     script(src='/web/js/app.js')	
@@ -11,3 +12,4 @@ block body
         
     include partials/hello.jade
     include partials/profile.jade
+    //include ../../../node_modules/projevo-core/content/web/views/templates.jade

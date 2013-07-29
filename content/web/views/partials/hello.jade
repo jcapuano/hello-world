@@ -14,5 +14,9 @@ script#hello(type='text/ng-template')
 
     div
         i
-            small
-                a(href='/profile') {{user.userName}}
+            small#user
+                //a(href='/profile') {{user.userName}}
+                {{user.userName}}
+        div
+            p There should be change password markup below
+            change-password
