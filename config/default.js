@@ -23,7 +23,7 @@ module.exports = {
   },
   data: {
 	  providers: [
-          'citizenProvider'
+          //'citizenProvider'
       ],
 	  socket: {
 	    server: {
